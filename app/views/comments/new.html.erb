@@ -1,0 +1,9 @@
+<%= form_for comment do |f| %>
+    <%= f.label "Content" %>
+    <%= f.text_area :content %>
+    <%= f.label "User" %>
+    <%= f.collection_select :user_id %>
+    <%= f.label "Post" %>
+    <%= f.collection_select :post_id %>
+    <%= f.submit %>
+<% end %>
